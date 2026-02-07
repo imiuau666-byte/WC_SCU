@@ -48,7 +48,7 @@ extern "C"
 
         _1KHzLoad.start();
 
-        /*Buzzer::update();*/
+        Buzzer::update();
         LED::update();
         WS2812::transmit();
 

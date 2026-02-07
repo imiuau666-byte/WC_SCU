@@ -81,7 +81,7 @@ void decode()
     adcData.iTX     = iTx * ISENSE_FILTER_ALPHA + adcData.iTX    * (1 - ISENSE_FILTER_ALPHA);
     adcData.vInput  = Vin * VIN_FILTER_ALPHA    + adcData.vInput * (1 - VIN_FILTER_ALPHA   );
     adcData.pTX     = adcData.vInput * adcData.iTX;
-
+/*
     // ---------------------------------------------------------
     // 3. 发送数据到 VOFA+ (FireWater协议: "电流,电压\n")
     // ---------------------------------------------------------
@@ -111,6 +111,6 @@ void decode()
             HAL_UART_Transmit(&huart3, (uint8_t*)vofa_buf, strlen(vofa_buf), 5);
         }
     }
-
+*/
  }
 }// namespace ADC
